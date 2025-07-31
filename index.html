@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annapurna Foods</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Annapurna Foods</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="Order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious food delivered to your doorstep 🍱</h2>
+    <button id="viewMenuBtn">View Menu</button>
+  </section>
+
+  <section id="menu" class="menu hidden">
+    <h2>🍽️ Our Signature Dishes</h2>
+    <div class="dish-grid">
+      <div class="dish-card"><img src="Dish1.png" alt="Dish 1" /><h3>Burger</h3>
+    <button onclick="orderItem('Burger')">Order Now</button>
+    </div>
+      <div class="dish-card"><img src="Dish2.png" alt="Dish 2" /><h3> ChilliPotato</h3>
+      <button onclick="orderItem('ChilliPotato')">Order Now</button>
+    </div>
+      <div class="dish-card"><img src="Dish3.png" alt="Dish 3" /><h3>Kadhai Paneer</h3>
+        <button onclick="orderItem('Kadhai Paneer')">Order Now</button>
+     </div>
+      <div class="dish-card"><img src="Dish4.png" alt="Dish 4" /><h3> Spicy Pizza</h3>
+        <button onclick="orderItem('Spicy Pizza')">Order Now</button>
+      </div>
+      <div class="dish-card"><img src="Dish5.png" alt="Dish 5" /><h3>Veg Thali</h3>
+        <button onclick="orderItem('Veg Thali')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+    <section>
+    <div id="chefProfile" class="chef-profile hidden">
+      <h3 id="chefName">x</h3>
+      <p id="chefBio"></p>
+    </div>
+  </section>
+<section id="menu" class="menu hidden">
+  <h2>🍽️ Our Signature Dishes</h2>
+  <div class="dish-grid">
+    <div class="dish-card">
+      <img src="Dish1.png" alt="Dish 1" />
+      <h3>Spicy Pizza</h3>
+      <button>Order Now</button>
+    </div>
+    <div class="dish-card">
+      <img src="Dish2.png" alt="Dish 2" />
+      <h3>Paneer Wrap</h3>
+      <button>Order Now</button>
+    </div>
+    <div class="dish-card">
+      <img src="Dish3.png" alt="Dish 3" />
+      <h3>Chilli Potato</h3>
+      <button>Order Now</button>
+    </div>
+    <div class="dish-card">
+      <img src="Dish4.png" alt="Dish 4" />
+      <h3>Veg Thali</h3>
+      <button>Order Now</button>
+    </div>
+  </div>
+</section>
+<section id="chefs" class="chefs">
+  <h2>👨‍🍳 Meet Our Masterchefs</h2>
+  <div class="chef-grid">
+    <div class="chef-card">
+      <img src="chef1.jpg" alt="Chef Shiva">
+      <h3>Chef Shiva</h3>
+      <p>Expert in North Indian cuisine</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef2.jpg" alt="Chef Lakshmi">
+      <h3>Chef Lakshmi</h3>
+      <p>Master of South Indian flavors</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef3.jpg" alt="Chef Rajeev">
+      <h3>Chef Rajeev</h3>
+      <p>Italian and continental specialist</p>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+<footer>
+    <p>&copy; 2025 Annapurna Foods. All rights reserved.</p>
+  </footer>
+  </body>
+
+

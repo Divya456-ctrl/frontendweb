@@ -1,0 +1,268 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff2e6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ff9900;
+  padding: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe6cc;
+}
+
+/* Hero */
+.hero {
+  background-color: #fff0e6;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#viewMenuBtn {
+  padding: 0.8em 1.6em;
+  font-size: 1em;
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#viewMenuBtn:hover {
+  background-color: #ff5c2f;
+}
+
+/* Menu Section */
+.menu {
+  padding: 3em 1em;
+  background-color: #fff8e6;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.dish-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.dish-card {
+  width: 220px;
+  background-color: #fffaf0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* avoids distortion or blur */
+  border-radius: 8px;
+  margin-bottom: 0.8em;
+}
+
+.dish-card h3 {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+
+.dish-card button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dish-card button:hover {
+  background-color: #e67700;
+}
+
+/* Chef Section */
+.chefs {
+  padding: 4em 1em;
+  background-color: #ffe6cc;
+  text-align: center;
+}
+
+.chefs h2 {
+  font-size: 1.8em;
+  margin-bottom: 2em;
+}
+
+.chef-list {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.chef-card {
+  width: 200px;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.chef-card:hover {
+  transform: scale(1.05);
+}
+
+.chef-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.chef-profile {
+  background-color: #fffaf0;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #ff9900;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  margin-top: 3em;
+}
+
+/* Visibility Classes */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dish-grid,
+  .chef-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card,
+  .chef-card {
+    width: 90%;
+  }
+}
+.chefs-grid{
+  padding: 40px 20px;
+  background-color: #e67700;
+  text-align: center;
+}
+
+.chefs-grid h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.chef-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.chef-grid-card {
+  background-color: #e67700;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.chef-grid-card:hover:hover {
+  transform: scale(1.05);
+}
+
+.chef-grid-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.chef-card h3 {
+  margin-top: 15px;
+  color:#e67700;
+}
+
+.chef-card p {
+  font-size: 14px;
+  color: #e67700;
+}
